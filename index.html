@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div id="carrinho-icone" onclick="abrirCarrinho()">
+  🛒 <span id="carrinho-count">0</span>
+</div>
+
+<div id="carrinho-painel">
+  <h3>Seu pedido</h3>
+  <ul id="carrinho-lista"></ul>
+  <p id="carrinho-total"></p>
+  <button onclick="finalizarPedido()">💬 Finalizar pelo WhatsApp</button>
+  <button onclick="fecharCarrinho()">Fechar</button>
+</div>
     <header>
         <div class="header-top">
             <div class="header-banner">
@@ -44,7 +55,12 @@
       <div class="card-desc">
         <h3>Valor: R$ 150,00</h3>
         <p>9 rosas simples<br>+ 18 ferreiro roche<br>+ 2 borboletas metálicas<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
-      </div>
+      <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê de rosas vermelhas com ferreiro roche"
+  data-preco="150,00">
+  🛒 Adicionar
+</button>
+</div>      
     </div>
   </div>
 <!-- produto 2 -->
@@ -58,7 +74,12 @@
       <div class="card-desc">
         <h3>Valor: R$ 120,00</h3>
         <p>10 rosas<br>+ 12 ferreiro roche<br>+ 1 borboletas metálicas<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
-      </div>
+            <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê de rosas vermelhas com glitter com ferreiro roche"
+  data-preco="120,00">
+  🛒 Adicionar
+</button>
+</div>
     </div>
   </div>
 
@@ -73,7 +94,12 @@
       <div class="card-desc">
         <h3>Valor: R$ 190,00</h3>
         <p>20 rosas com glitter<br>enjel ( Stitch)<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
-      </div>
+      <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê de rosasenjel ( Stitch)"
+  data-preco="190,00">
+  🛒 Adicionar
+</button>
+</div>
     </div>
   </div>
 
@@ -88,7 +114,12 @@
       <div class="card-desc">
         <h3>Valor: R$ 50,00</h3>
         <p>8 flores colorida<br>+ 2 borboletas metálicas<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
-      </div>
+      <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê de flores mistas"
+  data-preco="50,00">
+  🛒 Adicionar
+</button>
+</div>
     </div>
   </div>
 
@@ -103,7 +134,12 @@
       <div class="card-desc">
         <h3>Valor: R$ 57,00</h3>
         <p>15 rosas (2 cores)<br>+ 4 fotos personalizadas<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
-      </div>
+      <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê do corinthians"
+  data-preco="57,00">
+  🛒 Adicionar
+</button>
+</div>
     </div>
   </div>
 
@@ -118,6 +154,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 77,00</h3>
         <p>7 rosas c/glitter<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê simples de flores vermelhas"
+  data-preco="77,00">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -133,6 +174,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 186,50</h3>
         <p>18 rosas<br>+ 3 lírios<br>+ 18 bom bom<br>+ 2 borboletas metálicas<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -148,6 +194,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 50,30</h3>
         <p>30 borboletas<br>borda azul claro<br>+ led<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -163,6 +214,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 140,00</h3>
         <p>15 flores com glitter<br>+ 1 pelúcia do homem aranha<br>papel ceda<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -178,6 +234,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 28,60</h3>
         <p>4 flores<br>+ dinheiro (falso)<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -192,6 +253,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 125,00</h3>
         <p>21 flores com glitter<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -207,6 +273,11 @@
       <div class="card-desc">
         <h3>Valor: R$ 79,70</h3>
         <p>11 flores com glitter<br>sempre viva<br>+ led<br>+ 1 papel coreano<br>+ 1 laço de cetim</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -223,6 +294,11 @@
       <div class="card-desc-cesta">
         <h3>Valor: R$ 200,00</h3>
         <p>Cesta de coraçao<br>pelúcia<br>2 quinderbueno<br>7 barra  kit Kat<br>2 kit Kat normal<br>2 barrinha de Nutella<br>12 rafaello<br>1 bolo de pote pequeno<br>3 snikers<br>4 barras de chocolate</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Buquê premio de rosas clássico"
+  data-preco="186,50">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -235,6 +311,11 @@
       <div class="card-desc-cesta">
         <h3>Valor: R$ 160,00</h3>
         <p>Cesta tradicional<br>1 Ruffles<br>1 caixa biz<br>1 barra biz<br>1 sufller<br>11 caixa da lacta<br>1 ouro branco<br>1 sonho de valsa<br>2 KitKat</p>
+        <button class="btn-adicionar" onclick="adicionarCarrinho(this)"
+  data-nome="Kitt delicia"
+  data-preco="160,00">
+  🛒 Adicionar
+</button>
       </div>
     </div>
   </div>
@@ -283,6 +364,54 @@
     noResults.classList.toggle('visible', visible === 0 && terms.length > 0);
     noResultsTerm.textContent = input.value;
   });
+let carrinho = [];
+
+function adicionarCarrinho(btn) {
+  const nome = btn.dataset.nome;
+  const preco = btn.dataset.preco;
+  carrinho.push({ nome, preco });
+  document.getElementById('carrinho-count').textContent = carrinho.length;
+}
+
+function abrirCarrinho() {
+  const painel = document.getElementById('carrinho-painel');
+  painel.style.display = painel.style.display === 'block' ? 'none' : 'block';
+  atualizarCarrinho();
+}
+
+function fecharCarrinho() {
+  document.getElementById('carrinho-painel').style.display = 'none';
+}
+
+function atualizarCarrinho() {
+  const lista = document.getElementById('carrinho-lista');
+  lista.innerHTML = '';
+  let total = 0;
+  carrinho.forEach((item, i) => {
+    const valor = parseFloat(item.preco.replace(',', '.'));
+    total += valor;
+  lista.innerHTML += `<li>${item.nome} <span>R$ ${item.preco}</span> <button onclick="removerItem(${i})" style="background:none;border:none;color:red;cursor:pointer;font-size:16px;">✕</button></li>`;
+  });
+  document.getElementById('carrinho-total').textContent = 
+    `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+}
+function removerItem(i) {
+  carrinho.splice(i, 1);
+  document.getElementById('carrinho-count').textContent = carrinho.length;
+  atualizarCarrinho();
+}
+
+function finalizarPedido() {
+  if (carrinho.length === 0) return alert('Seu carrinho está vazio!');
+  let mensagem = 'Olá! Gostaria de fazer um pedido:%0A%0A';
+  carrinho.forEach(item => {
+    mensagem += `• ${item.nome} — R$ ${item.preco}%0A`;
+  });
+  const total = carrinho.reduce((s, i) => s + parseFloat(i.preco.replace(',', '.')), 0);
+  mensagem += `%0ATotal: R$ ${total.toFixed(2).replace('.', ',')}`;
+  window.open(`https://wa.me/5516993414588?text=${mensagem}`, '_blank');
+}
+
 </script>
 
 </body>
