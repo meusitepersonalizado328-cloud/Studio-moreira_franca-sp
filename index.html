@@ -423,6 +423,14 @@ function finalizarPedido() {
   mensagem += `%0ATotal: R$ ${total.toFixed(2).replace('.', ',')}`;
   window.open(`https://wa.me/5516993414588?text=${mensagem}`, '_blank');
 }
+    function abrirInfo() {
+  const p = document.getElementById('info-painel');
+  p.style.display = p.style.display === 'block' ? 'none' : 'block';
+}
+
+function fecharInfo() {
+  document.getElementById('info-painel').style.display = 'none';
+}
 
 </script>
 
