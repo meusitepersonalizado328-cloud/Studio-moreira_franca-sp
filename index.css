@@ -1,5 +1,5 @@
 
-    body {
+       body {
       background-color: linen;
       font-family: Arial, Helvetica, sans-serif;
       color: #222;
@@ -275,6 +275,90 @@
       grid-column: 1 / -1;
     }
     .no-results.visible { display: block; }
+
+    #carrinho-icone {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: deeppink;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#carrinho-painel {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  background: white;
+  border: 2px solid #f0c0c8;
+  border-radius: 18px;
+  padding: 20px;
+  width: 300px;
+  z-index: 999;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+#carrinho-painel h3 {
+  color: #8B0032;
+  margin-bottom: 12px;
+}
+
+#carrinho-lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#carrinho-lista li {
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #f0c0c8;
+  display: flex;
+  justify-content: space-between;
+}
+
+#carrinho-painel button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#carrinho-painel button:first-of-type {
+  background: deeppink;
+  color: white;
+}
+
+#carrinho-painel button:last-of-type {
+  background: #f0c0c8;
+  color: #8B0032;
+}
+
+.btn-adicionar {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: deeppink;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: opacity .2s;
+}
+
+.btn-adicionar:hover { opacity: 0.8; }
 
     footer {
       text-align: center;
