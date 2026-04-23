@@ -366,6 +366,49 @@
       color: #aaa;
       border-top: 1px solid #e8d0d0;
     }
+.info-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  background: #fff5f5;
+  border: 2px solid #f0c0c8;
+  border-radius: 18px;
+  padding: 18px 16px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,.06);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(200,60,100,.13);
+}
+
+.info-card-icon { font-size: 28px; margin-bottom: 8px; }
+
+.info-card strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8B0032;
+  margin-bottom: 6px;
+}
+
+.info-card p {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
     @media (max-width: 600px) {
       .header-top {
         flex-direction: column;
